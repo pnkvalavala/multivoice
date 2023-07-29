@@ -1,0 +1,566 @@
+[
+    {
+        "user": "HOWARD",
+        "text": "All right, just a few more feet and...",
+        "start_time": 11720,
+        "end_time": 15556
+    },
+    {
+        "user": "HOWARD",
+        "text": "Here we are, gentlemen, the Gates of Elzebub.",
+        "start_time": 15724,
+        "end_time": 18934
+    },
+    {
+        "user": "SHELDON",
+        "text": "Good Lord.",
+        "start_time": 19436,
+        "end_time": 19892
+    },
+    {
+        "user": "RAJESH",
+        "text": "Oh.",
+        "start_time": 19904,
+        "end_time": 20602
+    },
+    {
+        "user": "LEONARD",
+        "text": "Don't panic. This is what the last 97 hours have been about.",
+        "start_time": 20770,
+        "end_time": 24023
+    },
+    {
+        "user": "HOWARD",
+        "text": "Stay frosty. There's a horde of goblins on the other side of that gate guarding the Sword of Azeroth.",
+        "start_time": 24190,
+        "end_time": 29945
+    },
+    {
+        "user": "LEONARD",
+        "text": "Warriors, unsheathe your weapons. Magic wielders, raise your wands.",
+        "start_time": 30113,
+        "end_time": 33198
+    },
+    {
+        "user": "SHELDON",
+        "text": "Lock and load.",
+        "start_time": 33366,
+        "end_time": 34450
+    },
+    {
+        "user": "HOWARD",
+        "text": "Raj, blow the gates.",
+        "start_time": 34617,
+        "end_time": 36785
+    },
+    {
+        "user": "RAJESH",
+        "text": "Blowing the gates.",
+        "start_time": 36953,
+        "end_time": 38203
+    },
+    {
+        "user": "RAJESH",
+        "text": "Control-shift-B.",
+        "start_time": 38872,
+        "end_time": 42916
+    },
+    {
+        "user": "RAJESH",
+        "text": "Oh, my God, so many goblins.",
+        "start_time": 45086,
+        "end_time": 47350
+    },
+    {
+        "user": "HOWARD",
+        "text": "Aah!",
+        "start_time": 47500,
+        "end_time": 47838
+    },
+    {
+        "user": "HOWARD",
+        "text": "Don't just stand there. Slash and move.",
+        "start_time": 48006,
+        "end_time": 50090
+    },
+    {
+        "user": "LEONARD",
+        "text": "Stay in formation.",
+        "start_time": 50258,
+        "end_time": 51425
+    },
+    {
+        "user": "HOWARD",
+        "text": "Leonard, you got one on your tail.",
+        "start_time": 51593,
+        "end_time": 53020
+    },
+    {
+        "user": "LEONARD",
+        "text": "That's all right, my tail's prehensile.",
+        "start_time": 53030,
+        "end_time": 55179
+    },
+    {
+        "user": "RAJESH",
+        "text": "I got him, Leonard.",
+        "start_time": 55346,
+        "end_time": 56513
+    },
+    {
+        "user": "RAJESH",
+        "text": "Tonight, I spice my meat with goblin blood.",
+        "start_time": 56681,
+        "end_time": 60392
+    },
+    {
+        "user": "LEONARD",
+        "text": "Raj, it's a trap. They're flanking us.",
+        "start_time": 60560,
+        "end_time": 62394
+    },
+    {
+        "user": "RAJESH",
+        "text": "Oh, he's got me.",
+        "start_time": 62562,
+        "end_time": 64146
+    },
+    {
+        "user": "HOWARD",
+        "text": "Sheldon, he's got Raj. Use your sleep spell.",
+        "start_time": 64314,
+        "end_time": 66815
+    },
+    {
+        "user": "HOWARD",
+        "text": "Sheldon. Sheldon.",
+        "start_time": 67192,
+        "end_time": 68734
+    },
+    {
+        "user": "SHELDON",
+        "text": "I've got the Sword of Azeroth.",
+        "start_time": 68902,
+        "end_time": 72988
+    },
+    {
+        "user": "LEONARD",
+        "text": "Forget the sword, Sheldon, help Raj.",
+        "start_time": 73156,
+        "end_time": 74953
+    },
+    {
+        "user": "SHELDON",
+        "text": "There is no more Sheldon.",
+        "start_time": 75100,
+        "end_time": 76200
+    },
+    {
+        "user": "SHELDON",
+        "text": "I am the sword master.",
+        "start_time": 76367,
+        "end_time": 78577
+    },
+    {
+        "user": "HOWARD",
+        "text": "Leonard, look out.",
+        "start_time": 78745,
+        "end_time": 79862
+    },
+    {
+        "user": "LEONARD",
+        "text": "Damn it, man, we're dying here.",
+        "start_time": 80000,
+        "end_time": 81163
+    },
+    {
+        "user": "SHELDON",
+        "text": "Goodbye, peasants.",
+        "start_time": 81331,
+        "end_time": 82748
+    },
+    {
+        "user": "LEONARD",
+        "text": "The bastard teleported.",
+        "start_time": 84125,
+        "end_time": 85250
+    },
+    {
+        "user": "RAJESH",
+        "text": "He's selling the Sword of Azeroth on eBay.",
+        "start_time": 87087,
+        "end_time": 90339
+    },
+    {
+        "user": "LEONARD",
+        "text": "You betrayed us for money? Who are you?",
+        "start_time": 90840,
+        "end_time": 93383
+    },
+    {
+        "user": "SHELDON",
+        "text": "I'm a rogue knight elf.",
+        "start_time": 93551,
+        "end_time": 94843
+    },
+    {
+        "user": "SHELDON",
+        "text": "Don't you people read character descriptions?",
+        "start_time": 95011,
+        "end_time": 97513
+    },
+    {
+        "user": "SHELDON",
+        "text": "Wait, wait, wait. Somebody just clicked \"Buy It Now.\"",
+        "start_time": 97680,
+        "end_time": 100140
+    },
+    {
+        "user": "HOWARD",
+        "text": "I am the sword master.",
+        "start_time": 100308,
+        "end_time": 103519
+    },
+    {
+        "user": "SHELDON",
+        "text": "Whoo! I'm all sweaty.",
+        "start_time": 128461,
+        "end_time": 129878
+    },
+    {
+        "user": "SHELDON",
+        "text": "Wanna log on to Second Life and go swimming?",
+        "start_time": 130046,
+        "end_time": 132131
+    },
+    {
+        "user": "SHELDON",
+        "text": "I just built a virtual pool.",
+        "start_time": 132298,
+        "end_time": 134591
+    },
+    {
+        "user": "LEONARD",
+        "text": "No. I can't look at you or your avatar right now.",
+        "start_time": 134884,
+        "end_time": 138178
+    },
+    {
+        "user": "HOWARD",
+        "text": "Sounds like your neighbor's home.",
+        "start_time": 142267,
+        "end_time": 144434
+    },
+    {
+        "user": "LEONARD",
+        "text": "Excuse me.",
+        "start_time": 145812,
+        "end_time": 147396
+    },
+    {
+        "user": "SHELDON",
+        "text": "Don't forget the mail you took so you'd have an excuse to talk to her.",
+        "start_time": 147564,
+        "end_time": 150941
+    },
+    {
+        "user": "LEONARD",
+        "text": "Oh, right, right, right.",
+        "start_time": 151109,
+        "end_time": 153443
+    },
+    {
+        "user": "HOWARD",
+        "text": "Stealing snail mail, very old school. I like it.",
+        "start_time": 153611,
+        "end_time": 157072
+    },
+    {
+        "user": "LEONARD",
+        "text": "Penny, the mailman did it again. He... Oh, sorry.",
+        "start_time": 157866,
+        "end_time": 161743
+    },
+    {
+        "user": "PENNY",
+        "text": "Um, no, hi, Leonard. This is Doug.",
+        "start_time": 161911,
+        "end_time": 163745
+    },
+    {
+        "user": "PENNY",
+        "text": "Doug, this is my neighbor, Leonard.",
+        "start_time": 163913,
+        "end_time": 165682
+    },
+    {
+        "user": "DOUG",
+        "text": "What's up, bro?",
+        "start_time": 166120,
+        "end_time": 167082
+    },
+    {
+        "user": "LEONARD",
+        "text": "Not much.",
+        "start_time": 168877,
+        "end_time": 170752
+    },
+    {
+        "user": "LEONARD",
+        "text": "Bro. Heh.",
+        "start_time": 172255,
+        "end_time": 173797
+    },
+    {
+        "user": "PENNY",
+        "text": "Is everything okay?",
+        "start_time": 174340,
+        "end_time": 175591
+    },
+    {
+        "user": "LEONARD",
+        "text": "Yeah, no. I just... I got your mail again, here.",
+        "start_time": 175758,
+        "end_time": 178051
+    },
+    {
+        "user": "PENNY",
+        "text": "Oh, thank you. I've got to talk to that mailman.",
+        "start_time": 178219,
+        "end_time": 180762
+    },
+    {
+        "user": "LEONARD",
+        "text": "Oh, no, that's probably not such a good idea.",
+        "start_time": 180930,
+        "end_time": 183140
+    },
+    {
+        "user": "LEONARD",
+        "text": "Civil servants have a documented propensity to, you know, snap, so...",
+        "start_time": 184225,
+        "end_time": 189146
+    },
+    {
+        "user": "PENNY",
+        "text": "Okay. Well, thank you again.",
+        "start_time": 189939,
+        "end_time": 191940
+    },
+    {
+        "user": "LEONARD",
+        "text": "No problem. Bye.",
+        "start_time": 192108,
+        "end_time": 194109
+    },
+    {
+        "user": "LEONARD",
+        "text": "Oh, and bye, bro. Heh.",
+        "start_time": 194485,
+        "end_time": 197571
+    },
+    {
+        "user": "SHELDON",
+        "text": "Penny for your thoughts.",
+        "start_time": 204829,
+        "end_time": 207080
+    },
+    {
+        "user": "RAJESH",
+        "text": "What's the matter?",
+        "start_time": 208249,
+        "end_time": 210000
+    },
+    {
+        "user": "LEONARD",
+        "text": "No, I'm fine.",
+        "start_time": 210126,
+        "end_time": 211126
+    },
+    {
+        "user": "LEONARD",
+        "text": "Penny's fine, the guy she's kissing is really fine.",
+        "start_time": 211294,
+        "end_time": 214129
+    },
+    {
+        "user": "HOWARD",
+        "text": "Kissing? What kind of kissing? Cheeks, lips, chase, French?",
+        "start_time": 215215,
+        "end_time": 218592
+    },
+    {
+        "user": "LEONARD",
+        "text": "What is wrong with you?",
+        "start_time": 220303,
+        "end_time": 222304
+    },
+    {
+        "user": "HOWARD",
+        "text": "I'm a romantic.",
+        "start_time": 223181,
+        "end_time": 224932
+    },
+    {
+        "user": "SHELDON",
+        "text": "Please don't tell me that your hopeless infatuation is devolving into pointless jealousy.",
+        "start_time": 226726,
+        "end_time": 230979
+    },
+    {
+        "user": "LEONARD",
+        "text": "No, I'm not jealous. I'm just a little concerned for her.",
+        "start_time": 231147,
+        "end_time": 233982
+    },
+    {
+        "user": "LEONARD",
+        "text": "Didn't like the look of the guy she was with.",
+        "start_time": 234150,
+        "end_time": 236235
+    },
+    {
+        "user": "HOWARD",
+        "text": "Because he looks better than you?",
+        "start_time": 236402,
+        "end_time": 238195
+    },
+    {
+        "user": "LEONARD",
+        "text": "Yeah.",
+        "start_time": 239364,
+        "end_time": 240906
+    },
+    {
+        "user": "LEONARD",
+        "text": "He was kind of dreamy.",
+        "start_time": 241658,
+        "end_time": 243450
+    },
+    {
+        "user": "SHELDON",
+        "text": "At least now you can retrieve the black box from the smoldering wreckage that was once your fantasy of dating her and analyze the data so that you don't crash into geek mountain again.",
+        "start_time": 244077,
+        "end_time": 253835
+    },
+    {
+        "user": "HOWARD",
+        "text": "I disagree. Love is not a sprint. It's a marathon.",
+        "start_time": 255171,
+        "end_time": 259216
+    },
+    {
+        "user": "HOWARD",
+        "text": "A relentless pursuit that only ends when she falls into your arms or... hits you with the pepper spray.",
+        "start_time": 259384,
+        "end_time": 267474
+    },
+    {
+        "user": "LEONARD",
+        "text": "No, I'm done with Penny.",
+        "start_time": 268059,
+        "end_time": 269351
+    },
+    {
+        "user": "LEONARD",
+        "text": "I'm gonna be more realistic and go after someone my own speed.",
+        "start_time": 269936,
+        "end_time": 272854
+    },
+    {
+        "user": "RAJESH",
+        "text": "Like who?",
+        "start_time": 273022,
+        "end_time": 274100
+    },
+    {
+        "user": "LEONARD",
+        "text": "I don't know.",
+        "start_time": 274241,
+        "end_time": 275107
+    },
+    {
+        "user": "LEONARD",
+        "text": "Olivia Geiger?",
+        "start_time": 275275,
+        "end_time": 276316
+    },
+    {
+        "user": "SHELDON",
+        "text": "The dietitian at the cafeteria with the limp and the lazy eye?",
+        "start_time": 276484,
+        "end_time": 280362
+    },
+    {
+        "user": "LEONARD",
+        "text": "Yeah.",
+        "start_time": 281948,
+        "end_time": 282000
+    },
+    {
+        "user": "SHELDON",
+        "text": "Well, I don't think you have a shot there.",
+        "start_time": 282100,
+        "end_time": 284408
+    },
+    {
+        "user": "SHELDON",
+        "text": "I have noticed that Leslie Winkle recently started shaving her legs.",
+        "start_time": 285910,
+        "end_time": 289037
+    },
+    {
+        "user": "SHELDON",
+        "text": "Now, given that winter is coming, one can assume she's signaling sexual availability.",
+        "start_time": 289205,
+        "end_time": 293667
+    },
+    {
+        "user": "HOWARD",
+        "text": "I don't know. You guys work in the same lab.",
+        "start_time": 294544,
+        "end_time": 296545
+    },
+    {
+        "user": "LEONARD",
+        "text": "So?",
+        "start_time": 296921,
+        "end_time": 297200
+    },
+    {
+        "user": "HOWARD",
+        "text": "There are pitfalls.",
+        "start_time": 297500,
+        "end_time": 299047
+    },
+    {
+        "user": "HOWARD",
+        "text": "Trust me, I know.",
+        "start_time": 299215,
+        "end_time": 300716
+    },
+    {
+        "user": "HOWARD",
+        "text": "When it comes to sexual-harassment law.. I'm.. a bit of a self-taught expert.",
+        "start_time": 300883,
+        "end_time": 307139
+    },
+    {
+        "user": "LEONARD",
+        "text": "Look howard, if I were to ask Leslie Winkle out, it would just be for dinner.",
+        "start_time": 308683,
+        "end_time": 312019
+    },
+    {
+        "user": "LEONARD",
+        "text": "I'm not gonna walk into the lab, ask her to strip naked and dance for me.",
+        "start_time": 312186,
+        "end_time": 316023
+    },
+    {
+        "user": "HOWARD",
+        "text": "Oh.., then you're probably okay.",
+        "start_time": 316190,
+        "end_time": 318442
+    }
+]

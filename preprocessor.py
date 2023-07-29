@@ -23,10 +23,12 @@ def time_to_milliseconds(time_str):
     h, m, s, ms = map(int, re.split(r"[:,]", time_str))
     return h * 3600000 + m * 60000 + s * 1000 + ms
 
-with open("S01E03.srt", "r") as srt_file:
+with open("data/subtitles.srt", "r") as srt_file:
     srt_content = srt_file.read()
 
 dialogues = srt_to_json(srt_content)
+
+# For simplicity only 5 min of audio is considered and manually made some corrections to dialogues.json
 
 with open("dialogues.json", "w") as json_file:
     json.dump(dialogues, json_file)

@@ -3,7 +3,7 @@ import streamlit as st
 
 from utils import init_session_state, voice_folder
 from credentials import credentials
-from audio_handler import extract_audio
+from audio_handler import extract_audio, generate_audio
 from voiceclone import clone
 from translate import translation
 
@@ -37,8 +37,7 @@ if st.session_state["auth_ok"]:
     with st.spinner('Generating individual voice clones'):
         voice_folder()
         if st.session_state['audio_file'] and st.session_state['json_file']:
-            extract_audio(
-                st.session_state['audio_file'], 
+            extract_audio( 
                 st.session_state['json_file'], 
                 st.session_state['voice_clone_dir']
             )
@@ -58,5 +57,12 @@ if st.session_state["clone"]==True:
         )
 
         translations_json = json.dumps(translations, ensure_ascii=False)
-        st.session_state["dialogue_translated"] = translations_json        
+        st.session_state["dialogue_translated"] = translations_json    
         st.success(f'Dialogues translated to {selected_lang}!')
+        with st.spinner("Final steps...This may take some time"):
+            generate_audio()
+
+            with open("output.mp3", "rb") as f:
+                audio_bytes = f.read()
+            
+            st.audio(audio_bytes, format='audio/mp3')

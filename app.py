@@ -1,12 +1,11 @@
-import os
 import json
-import librosa
-import requests
 import streamlit as st
 
-from utils import init_session_state, voice_clone
+from utils import init_session_state, voice_folder
 from credentials import credentials
 from audio_handler import extract_audio
+from voiceclone import clone
+from translate import translation
 
 init_session_state()
 
@@ -25,52 +24,39 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 credentials()
 
 if st.session_state["auth_ok"]:
+    input_json = st.file_uploader("Only JSON format of [this](https://github.com/pnkvalavala/Multivoice/blob/main/data/dialogues.json) structure is supported for now", type=["json"])
 
-    st.session_state['json_file'] = st.file_uploader("Only JSON format of [this](https://github.com/pnkvalavala/Multivoice/blob/main/data/dialogues.json) structure is supported for now", type=["json"])
+    if input_json:
+        st.session_state['json_file'] = json.load(input_json)
 
     st.session_state['audio_file'] = st.file_uploader("Upload audio file for voice cloning", type=["mp3", "wav"])
 
     with st.spinner('Generating individual voice clones'):
-        voice_clone()
+        voice_folder()
         if st.session_state['audio_file'] and st.session_state['json_file']:
             extract_audio(
                 st.session_state['audio_file'], 
-                json.load(st.session_state['json_file']), 
+                st.session_state['json_file'], 
                 st.session_state['voice_clone_dir']
             )
 
-    audio_files = os.listdir('voice_clones/')
+    clone()
 
-    voices = {}
+if st.session_state["clone"]==True:
+    # Translating json file
+    languages = ['English', 'German', 'Polish', 'Spanish', 'Italian', 'French', 'Portuguese', 'Hindi']
+    selected_lang = st.selectbox('Select language', languages)
 
-    # Cloning voice
-    for f in audio_files:
-        filepath = os.path.join('voice_clones/', f)
-        duration = librosa.get_duration(filename=filepath)
+    if st.button('Submit'):
+        translations = translation(
+            st.session_state['json_file'], 
+            selected_lang, 
+            st.session_state['openai_token']
+        )
 
-        with st.spinner(f'Cloning {f.rsplit(".", 1)[0]} Voice'):
-            add_url = "https://api.elevenlabs.io/v1/voices/add"
-            headers = {
-                "Accept": "application/json",
-                "xi-api-key": st.session_state['el_token']
-            }
-
-            data = {
-                'name': f,
-                'labels': '{"accent": "American"}',
-                'description': f'Cloned from {f}'
-            }
-
-            files = [
-                ('files', (f, open(filepath, 'rb'), 'audio/mpeg'))
-            ]
-
-            response = requests.post(add_url, headers=headers, data=data, files=files)
-            cloned_voice_id = response.json()['voice_id']
-        
-            voices[f.rsplit(".", 1)[0]] = cloned_voice_id
-    st.write(voices)
+        translations_json = json.dumps(translations, ensure_ascii=False)
+        st.session_state["dialogue_translated"] = translations_json        
+        st.success(f'Dialogues translated to {selected_lang}!')

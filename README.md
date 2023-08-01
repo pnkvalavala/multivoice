@@ -1,7 +1,26 @@
-# Multivoice Project
+# About
 
-Multivoice is a powerful tool that aims to enhance the viewing experience of foreign-language movies and TV shows. It allows users to enjoy personalized dubbed versions in character voices, making entertainment accessible and delightful.
+Multivoice is a powerful tool that aims to enhance the viewing experience of foreign-language movies and TV shows. It allows users to enjoy personalized dubbed versions in character voices, making entertainment accessible, delightful, and enjoyable, even if they don't understand the original language. With the option to translate dialogues into their chosen language, users can fully immerse themselves in the content and have a truly engaging experience.
 
+## Getting Started
+
+To run this app on your local machine,
+
+* Clone the repository
+
+  ```
+  git clone https://github.com/pnkvalavala/Multivoice
+  ```
+* Install required packages
+
+  ```
+  pip install -r requirements.txt
+  ```
+* Run the app
+
+  ```
+  streamlit run app.py
+  ```
 ## How Multivoice Works
 
 1. **Prerequisites**: Before using Multivoice, users need to obtain the following:
@@ -13,13 +32,13 @@ Multivoice is a powerful tool that aims to enhance the viewing experience of for
 
 2. **Web Application Usage**:
 
-   - Users can access the Multivoice web application without the need to clone the repository. The application leverages Streamlit for user interaction and seamless integration with other modules.
+   - The application leverages Streamlit for user interaction and seamless integration with other modules.
 
-   - The user-friendly interface allows users to upload a JSON file and an MP3 audio file. The JSON file follows a specific structure (detailed below) containing user information and dialogues with timestamps.
+   - The user-friendly interface allows users to upload a JSON file and an MP3 audio file. The JSON file follows a [specific structure](https://github.com/pnkvalavala/Multivoice/blob/main/sample_data/dialogues.json)  containing user information and dialogues with timestamps.
 
 3. **Dialogues Preprocessing**:
 
-   - The uploaded JSON file is preprocessed to extract user dialogues and convert them into a structured format. The JSON format is optimized to specify user names, dialogue text, and corresponding timestamps.                                    
+   - The uploaded JSON file is preprocessed to extract user dialogues and convert them into a structured format. The JSON format is optimized to specify user names, dialogue text, and corresponding timestamps.                                
   
 4. **Audio Extraction**:
 
@@ -35,7 +54,7 @@ Multivoice is a powerful tool that aims to enhance the viewing experience of for
 
 6. **Translation**:
 
-   - Users have the option to translate the dialogues into their preferred language using the OpenAI API.
+   - Users can then choose to translate the dialogues into their preferred language using the OpenAI API.
 
    - The application sends the dialogues from the uploaded JSON file to OpenAI, which returns the translated dialogues in the user's chosen language.
 
@@ -50,7 +69,7 @@ Multivoice is a powerful tool that aims to enhance the viewing experience of for
    - With the process complete, users can now enjoy foreign-language movies or TV shows with personalized dubbed versions in character voices, making the entertainment experience more immersive and enjoyable.
 
 
-Please note that the project includes sample data, including an MP3 audio file (`Big BangS01E03.mp3`), a `dialogues.json` file, and `subtitles.srt`, which are used for demonstrations.
+Please note that the project includes sample data, including an MP3 audio file (`BigBangS01E03.mp3`), a `dialogues.json` file, and `subtitles.srt`, which are used for demonstrations.
 
 With Multivoice, immerse yourself in a world of diverse entertainment and enjoy foreign-language content like never before! 🌍🎉🎬😄
 

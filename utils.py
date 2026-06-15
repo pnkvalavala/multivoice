@@ -5,7 +5,8 @@ def init_session_state():
     SESSION_DEFAULTS = {
         "auth_ok": False,
         "openai_token": False,
-        "el_token": None,
+        "provider": "ElevenLabs",
+        "provider_token": None,
         "json_file": None,
         "audio_file" :None,
         "voice_clone_dir": 'voice_clones',

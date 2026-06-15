@@ -2,10 +2,19 @@ import streamlit as st
 import requests
 
 from constants import *
+from providers import PROVIDERS, build_provider
 
 def credentials():
     with st.sidebar:
         st.title("Authentication", help=AUTHENTICATION_HELP)
+
+        provider_name = st.selectbox(
+            "Voice / TTS provider",
+            list(PROVIDERS.keys()),
+            help=PROVIDER_HELP,
+        )
+        st.session_state["provider"] = provider_name
+
         with st.form("tokens"):
             openai_token = st.text_input(
                 "OpenAI API",
@@ -13,23 +22,23 @@ def credentials():
                 help=OPENAI_HELP,
                 placeholder="This field is mandatory"
             )
-            el_token = st.text_input(
-                "ElevenLabs Token",
+            provider_token = st.text_input(
+                f"{provider_name} API key",
                 type="password",
-                help=EL_TOKEN,
+                help=PROVIDER_TOKEN_HELP[provider_name],
                 placeholder="This field is mandatory"
             )
             submit_tokens = st.form_submit_button("Submit")
-    
+
     if submit_tokens:
         with st.spinner("Hang tight, validating the tokens..."):
-            if not(openai_token and el_token):
+            if not(openai_token and provider_token):
                 st.error("Enter all credentials")
                 st.stop()
-            if check_openai(openai_token) and check_el(el_token):
+            if check_openai(openai_token) and check_provider(provider_name, provider_token):
                 st.session_state["auth_ok"] = True
                 st.session_state["openai_token"] = openai_token
-                st.session_state["el_token"] = el_token
+                st.session_state["provider_token"] = provider_token
                 st.success("API Keys are valid")
 
 def check_openai(openai_token):
@@ -43,15 +52,9 @@ def check_openai(openai_token):
     st.error("Enter valid OpenAI token")
     st.stop()
 
-def check_el(el_token):
-    url = "https://api.elevenlabs.io/v1/models"
-    headers = {
-        "Accept": "application/json",
-        "xi-api-key": el_token
-    }
-    
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
+def check_provider(provider_name, provider_token):
+    provider = build_provider(provider_name, provider_token)
+    if provider.validate_token(provider_token):
         return True
-    st.error("Enter valid ElevenLabs token")
+    st.error(f"Enter valid {provider_name} token")
     st.stop()
